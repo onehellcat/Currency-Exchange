@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency check</title>
+  </head>
+  <body>
+    <h1 id="headline">Currency Exchange</h1>
+    <h1 id="chestline">Exchanges to HUF</h1>
+    <h1 id="bottomline">
+      Supports ISO currency code, example: USD, EUR etc...
+    </h1>
+    <h1 id="bottomline">(Refreshed every day)</h1>
+
+    <div class="parent">
+      <div class="child1">
+        <div id="display">
+          <label>EUR<br /></label>
+          <br />
+          <label
+            >Date
+            <div id="eurDate">---</div></label
+          >
+          <br />
+          <label
+            >Value
+            <div id="eurValue">---</div></label
+          >
+        </div>
+      </div>
+      <div class="child2">
+        <!-- Middle -->
+        <div id="display">
+          <label
+            >Date
+            <div id="date">---</div></label
+          ><br />
+          <label
+            >Value
+            <div id="value">---</div></label
+          >
+        </div>
+        <div id="controls">
+          <input
+            type="text"
+            name="currency"
+            id="currency"
+            placeholder="Enter a currency" />
+          <br />
+          <div class="tooltip">
+            <button id="fetchUserDef" onclick="fetchUserDef()">Enter</button>
+            <span class="tooltiptext"
+              >Supports ISO currency code, example: USD, EUR etc...
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="child3">
+        <div id="display">
+          <label>USD<br /></label>
+          <br />
+          <label
+            >Date
+            <div id="usdDate">---</div></label
+          >
+          <br />
+          <label
+            >Value
+            <div id="usdValue">---</div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a
+        href="https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json"
+        >Supported currency's</a
+      >
+
+      <a
+        href="https://github.com/fawazahmed0/currency-api?tab=readme-ov-file#readme"
+        >API in use</a
+      >
+    </footer>
+  </body>
+  <script src="call.js"></script>
+</html>

@@ -1,0 +1,126 @@
+
+body{
+      -webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+}
+ #headline{
+    font-size: 64px;
+    color: hsl(0, 0%, 58%);
+    margin: 0px;
+}
+#chestline{
+       font-size: 32px;
+    color: hsl(0, 0%, 58%);
+    margin-bottom: 0px;
+}
+#bottomline{
+       font-size: 18px;
+    color: hsl(0, 0%, 45%);
+    margin-top: 0px;
+
+}
+#display{
+    font-size: 38px;
+     font-family: 'Damion';
+
+    color: hsl(0, 0%, 96%);
+    text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+#controls button{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 10px 20px;
+    min-width: 125px;
+    border: none;   
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+    background-color: hsl(200, 100%, 40%);
+}
+#controls button:hover{
+    background-color: hsl(200, 100%, 50%);
+}
+
+input{
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+    height: 40px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 5px;
+    border: none;
+    border-style: none;
+}
+
+.parent{
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(78, 78, 78);
+    
+}
+
+.child1{
+    width: 400px;
+    height: 400px;
+
+}
+
+.child2{
+   width: 400px;
+    height: 400px;
+
+}
+.child3{
+   width: 400px;
+    height: 400px;
+
+}
+        
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+footer a{
+    padding-right: 20px;
+    text-decoration: none;
+    color: thistle;
+}
+
